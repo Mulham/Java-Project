@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.controller.FirmController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="74.0" prefWidth="700.0" style="-fx-background-color: #c42c21;">
+         <children>
+            <Label alignment="CENTER" layoutX="217.0" layoutY="27.0" prefHeight="20.0" prefWidth="267.0" text="Firms" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="634.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/baseline_exit_to_app_black_24dp.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="mainLogout" layoutX="574.0" layoutY="25.0" text="Logout" />
+            <ImageView fitHeight="40.0" fitWidth="51.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/baseline_chevron_left_black_36dp.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="firm_back" layoutX="38.0" layoutY="25.0" text="Back" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="addFirm" fitHeight="40.0" fitWidth="33.0" layoutX="223.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/baseline_add_circle_black_36dp.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" editable="true" layoutX="-1.0" layoutY="74.0" prefHeight="250.0" prefWidth="234.0">
+        <columns>
+          <TableColumn fx:id="firm_name_table" prefWidth="120.0" text="Name" />
+            <TableColumn fx:id="firm_city_table" minWidth="0.0" prefWidth="113.0" text="city" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="deleteFirm" layoutX="84.0" layoutY="460.0" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #e32817;" text="Delete" textFill="WHITE" />
+      <Label fx:id="firm_label" layoutX="238.0" layoutY="467.0" prefHeight="26.0" prefWidth="222.0" />
+      <JFXTextField fx:id="firm_name" layoutX="39.0" layoutY="333.0" text="Name" />
+      <JFXTextField fx:id="firm_city" layoutX="39.0" layoutY="374.0" text="City" />
+      <JFXButton fx:id="updateFirm" layoutX="83.0" layoutY="428.0" style="-fx-background-color: #4066ff;" text="Update" textFill="#f2e2e2" />
+      <TableView fx:id="table1" editable="true" layoutX="325.0" layoutY="74.0" prefHeight="250.0" prefWidth="180.0">
+         <columns>
+            <TableColumn fx:id="job_table" minWidth="0.0" prefWidth="180.0" text="Job Order No" />
+         </columns>
+      </TableView>
+      <TableView fx:id="table11" editable="true" layoutX="520.0" layoutY="74.0" prefHeight="250.0" prefWidth="180.0">
+         <columns>
+            <TableColumn fx:id="offer_table" minWidth="0.0" prefWidth="180.0" text="Offer No" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="job" layoutX="338.0" layoutY="333.0" text="Job Order No" />
+      <ImageView fx:id="addOffer" fitHeight="40.0" fitWidth="33.0" layoutX="592.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/baseline_add_circle_black_36dp.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="deleteOffer" layoutX="576.0" layoutY="437.0" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #e32817;" text="Delete" textFill="WHITE" />
+      <JFXButton fx:id="updateOffer" layoutX="575.0" layoutY="405.0" style="-fx-background-color: #4066ff;" text="Update" textFill="#f2e2e2" />
+      <JFXTextField fx:id="offer" layoutX="533.0" layoutY="333.0" text="Offer No" />
+      <ImageView fx:id="addJob" fitHeight="40.0" fitWidth="33.0" layoutX="399.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/baseline_add_circle_black_36dp.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="deleteJob" layoutX="383.0" layoutY="435.0" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #e32817;" text="Delete" textFill="WHITE" />
+      <JFXButton fx:id="updateJob" layoutX="382.0" layoutY="403.0" style="-fx-background-color: #4066ff;" text="Update" textFill="#f2e2e2" />
+      <ImageView fitHeight="68.0" fitWidth="76.0" layoutX="240.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/baseline_arrow_forward_ios_black_48dp.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

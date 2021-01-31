@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.controller.ProjectController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="74.0" prefWidth="700.0" style="-fx-background-color: #c42c21;">
+         <children>
+            <Label alignment="CENTER" layoutX="217.0" layoutY="27.0" prefHeight="20.0" prefWidth="267.0" text="Report Informations" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="634.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/baseline_exit_to_app_black_24dp.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="mainLogout" layoutX="574.0" layoutY="25.0" text="Logout" />
+            <ImageView fitHeight="40.0" fitWidth="51.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/baseline_chevron_left_black_36dp.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="table_back" layoutX="38.0" layoutY="25.0" text="Back" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="surface_add" fitHeight="32.0" fitWidth="32.0" layoutX="404.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/baseline_add_circle_black_36dp.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" editable="true" layoutX="-1.0" layoutY="74.0" prefHeight="234.0" prefWidth="219.0">
+        <columns>
+          <TableColumn fx:id="project_id" prefWidth="62.0" text="id" />
+          <TableColumn fx:id="project_table" prefWidth="156.0" text="Project Name" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="project_delete" layoutX="108.0" layoutY="351.0" style="-fx-background-color: #e32817;" text="Delete" textFill="WHITE" />
+      <JFXTextField fx:id="project_field" layoutX="14.0" layoutY="315.0" text="Project Name" />
+      <JFXTextField fx:id="surface_field" layoutX="234.0" layoutY="315.0" text="Surface Condition" />
+      <JFXButton fx:id="project_update" layoutX="14.0" layoutY="351.0" style="-fx-background-color: #4066ff;" text="Update" textFill="#f2e2e2" />
+      <TableView fx:id="table1" editable="true" layoutX="234.0" layoutY="74.0" prefHeight="234.0" prefWidth="219.0">
+         <columns>
+            <TableColumn fx:id="surface_id" prefWidth="62.0" text="id" />
+            <TableColumn fx:id="surface_table" prefWidth="156.0" text="Surface Condition" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="surface_delete" layoutX="328.0" layoutY="351.0" style="-fx-background-color: #e32817;" text="Delete" textFill="WHITE" />
+      <JFXButton fx:id="surface_update" layoutX="234.0" layoutY="351.0" style="-fx-background-color: #4066ff;" text="Update" textFill="#f2e2e2" />
+      <Label fx:id="label" layoutX="233.0" layoutY="387.0" prefHeight="26.0" prefWidth="232.0" />
+      <ImageView fx:id="project_add" fitHeight="32.0" fitWidth="40.0" layoutX="180.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/baseline_add_circle_black_36dp.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table11" editable="true" layoutX="480.0" layoutY="74.0" prefHeight="234.0" prefWidth="219.0">
+         <columns>
+            <TableColumn fx:id="stage_id" prefWidth="53.0" text="id" />
+            <TableColumn fx:id="stage_table" prefWidth="165.0" text="Stage of Examination" />
+         </columns>
+      </TableView>
+      <ImageView fx:id="stage_add" fitHeight="32.0" fitWidth="32.0" layoutX="650.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/baseline_add_circle_black_36dp.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="stage_field" layoutX="480.0" layoutY="315.0" text="Stage" />
+      <JFXButton fx:id="stage_delete" layoutX="574.0" layoutY="351.0" style="-fx-background-color: #e32817;" text="Delete" textFill="WHITE" />
+      <JFXButton fx:id="stage_update" layoutX="480.0" layoutY="351.0" style="-fx-background-color: #4066ff;" text="Update" textFill="#f2e2e2" />
+   </children>
+</AnchorPane>
