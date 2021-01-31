@@ -1,5 +1,7 @@
+<div dir="rtl">
 
 لقراءة الوصف باللغة العربية قم بفتح ملف "readme_ar"
+</div>
 
 This is a Java Application with an Interface that can be used to learn Java and to learn how to connect it to MySQL database.
 
