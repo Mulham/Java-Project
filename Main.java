@@ -12,7 +12,7 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        File file = new File("test.pdf");
+        File file = new File("report.pdf");
         PDDocument document = PDDocument.load(file);
         PDPage page = document.getPage(0);
         // this should appear on the logo place
