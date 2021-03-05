@@ -2,8 +2,7 @@
 
 package sample.controller;
 
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXTextField;
+
 import javafx.animation.FadeTransition;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -35,10 +34,10 @@ public class Bericht4Controller {
     private URL location;
 
     @FXML
-    private JFXButton mainLogout;
+    private Button mainLogout;
 
     @FXML
-    private JFXButton table_back;
+    private Button table_back;
 
     @FXML
     private TableView<Result> table;
@@ -72,25 +71,25 @@ public class Bericht4Controller {
     private ToggleGroup result;
 
     @FXML
-    private JFXTextField weld_field;
+    private TextField weld_field;
 
     @FXML
-    private JFXTextField length_field;
+    private TextField length_field;
 
     @FXML
-    private JFXTextField welding_field;
+    private TextField welding_field;
 
     @FXML
-    private JFXTextField thickness_field;
+    private TextField thickness_field;
 
     @FXML
-    private JFXTextField diameter_field;
+    private TextField diameter_field;
 
     @FXML
-    private JFXTextField defect_type_field;
+    private TextField defect_type_field;
 
     @FXML
-    private JFXTextField defect_loc_field;
+    private TextField defect_loc_field;
 
     @FXML
     private RadioButton result_field_ok;
@@ -99,17 +98,17 @@ public class Bericht4Controller {
     private RadioButton result_field_red;
 
     @FXML
-    private JFXButton addButton;
+    private Button addButton;
 
     @FXML
-    private JFXButton updateButton;
+    private Button updateButton;
 
     @FXML
-    private JFXButton deleteButton;
+    private Button deleteButton;
     @FXML
     private Label label;
     @FXML
-    private JFXButton nextButton;
+    private Button nextButton;
     private SceneController sceneController;
     ObservableList<Result> oblist = FXCollections.observableArrayList();
     DatabaseHandler databaseHandler;

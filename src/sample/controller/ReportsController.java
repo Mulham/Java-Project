@@ -3,7 +3,7 @@
 
 package sample.controller;
 
-import com.jfoenix.controls.JFXButton;
+
 import javafx.animation.FadeTransition;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -11,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -37,10 +38,10 @@ public class ReportsController {
     private URL location;
 
     @FXML
-    private JFXButton mainLogout;
+    private Button mainLogout;
 
     @FXML
-    private JFXButton table_back;
+    private Button table_back;
 
     @FXML
     private ImageView addReport;
@@ -61,10 +62,10 @@ public class ReportsController {
     private TableColumn<Bericht, String> table_equipment;
 
     @FXML
-    private JFXButton deleteReport;
+    private Button deleteReport;
 
     @FXML
-    private JFXButton editReport;
+    private Button editReport;
 
     @FXML
     private Label radiographer_label;

@@ -3,7 +3,7 @@
 
 package sample.controller;
 
-import com.jfoenix.controls.JFXButton;
+
 import javafx.animation.FadeTransition;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -11,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -39,10 +40,10 @@ public class UserController {
     private URL location;
 
     @FXML
-    private JFXButton mainLogout;
+    private Button mainLogout;
 
     @FXML
-    private JFXButton table_back;
+    private Button table_back;
 
     @FXML
     private ImageView addUser;
@@ -63,10 +64,10 @@ public class UserController {
     @FXML
     private TableColumn<User, Date> table_date;
     @FXML
-    private JFXButton user_delete;
+    private Button user_delete;
 
     @FXML
-    private JFXButton user_edit;
+    private Button user_edit;
     @FXML
     private Label radiographer_label;
     @FXML

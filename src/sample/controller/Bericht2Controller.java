@@ -2,10 +2,7 @@
 
 package sample.controller;
 
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXRadioButton;
-import com.jfoenix.controls.JFXTextArea;
-import com.jfoenix.controls.JFXTextField;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -30,74 +27,74 @@ public class Bericht2Controller {
     private URL location;
 
     @FXML
-    private JFXButton mainLogout;
+    private Button mainLogout;
 
     @FXML
-    private JFXButton table_back;
+    private Button table_back;
 
     @FXML
-    private JFXTextField poleDistance;
+    private TextField poleDistance;
 
     @FXML
-    private JFXButton nextButton;
+    private Button nextButton;
 
     @FXML
     private Label idLabel;
 
     @FXML
-    private JFXTextField meg;
+    private TextField meg;
 
     @FXML
-    private JFXTextField exam_area;
+    private TextField exam_area;
 
     @FXML
-    private JFXTextField lux;
+    private TextField lux;
 
     @FXML
-    private JFXTextField surface_temp;
+    private TextField surface_temp;
 
     @FXML
-    private JFXTextField equipment;
+    private TextField equipment;
 
     @FXML
-    private JFXTextArea mp;
+    private TextArea mp;
 
     @FXML
-    private JFXTextField uv;
+    private TextField uv;
 
     @FXML
-    private JFXTextField light;
+    private TextField light;
 
     @FXML
-    private JFXRadioButton type_ac;
+    private RadioButton type_ac;
 
     @FXML
     private ToggleGroup Type;
 
     @FXML
-    private JFXRadioButton type_dc;
+    private RadioButton type_dc;
 
     @FXML
-    private JFXTextField test_medium;
+    private TextField test_medium;
 
     @FXML
-    private JFXTextField Demagnetization;
+    private TextField Demagnetization;
 
     @FXML
-    private JFXTextField heat;
+    private TextField heat;
 
     @FXML
-    private JFXTextField gauss;
+    private TextField gauss;
 
     @FXML
-    private JFXTextField surface_condition;
+    private TextField surface_condition;
 
     @FXML
-    private JFXTextField id_light;
+    private TextField id_light;
     @FXML
     private Label label;
     @FXML
-    private JFXTextField lifting;
+    private TextField lifting;
     private SceneController sceneController;
     DatabaseHandler databaseHandler;
     @FXML

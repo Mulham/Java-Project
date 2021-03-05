@@ -2,15 +2,12 @@
 
 package sample.controller;
 
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXTextField;
+
 import javafx.animation.FadeTransition;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -36,9 +33,9 @@ public class FirmController {
     @FXML
     private URL location;
     @FXML
-    private JFXButton mainLogout;
+    private Button mainLogout;
     @FXML
-    private JFXButton firm_back;
+    private Button firm_back;
     @FXML
     private ImageView addFirm;
     @FXML
@@ -48,15 +45,15 @@ public class FirmController {
     @FXML
     private TableColumn<Firm, String> firm_city_table;
     @FXML
-    private JFXButton deleteFirm;
+    private Button deleteFirm;
     @FXML
     private Label firm_label;
     @FXML
-    private JFXTextField firm_name;
+    private TextField firm_name;
     @FXML
-    private JFXTextField firm_city;
+    private TextField firm_city;
     @FXML
-    private JFXButton updateFirm;
+    private Button updateFirm;
     @FXML
     private TableView<Job> table1;
     @FXML
@@ -66,21 +63,21 @@ public class FirmController {
     @FXML
     private TableColumn<Offer, Double> offer_table;
     @FXML
-    private JFXTextField job;
+    private TextField job;
     @FXML
     private ImageView addOffer;
     @FXML
-    private JFXButton deleteOffer;
+    private Button deleteOffer;
     @FXML
-    private JFXButton updateOffer;
+    private Button updateOffer;
     @FXML
-    private JFXTextField offer;
+    private TextField offer;
     @FXML
     private ImageView addJob;
     @FXML
-    private JFXButton deleteJob;
+    private Button deleteJob;
     @FXML
-    private JFXButton updateJob;
+    private Button updateJob;
     private SceneController sceneController;
 
     @FXML

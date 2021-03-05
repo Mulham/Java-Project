@@ -17,7 +17,7 @@ public class DatabaseHandler extends Configs {
         Class.forName("com.mysql.jdbc.Driver");
 
         dbConnection = DriverManager.getConnection(connectionString, dbUser, dbPass);
-
+        System.out.println(dbConnection);
         return dbConnection;
     }
         //write

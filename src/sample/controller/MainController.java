@@ -3,11 +3,12 @@
 
 package sample.controller;
 
-import com.jfoenix.controls.JFXButton;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -22,22 +23,22 @@ public class MainController {
     private URL location;
 
     @FXML
-    private JFXButton mainLogout;
+    private Button mainLogout;
 
     @FXML
-    private JFXButton mainUsers;
+    private Button mainUsers;
 
     @FXML
-    private JFXButton mainCustomers;
+    private Button mainCustomers;
 
     @FXML
-    private JFXButton mainEquipments;
+    private Button mainEquipments;
 
     @FXML
-    private JFXButton mainReports;
+    private Button mainReports;
 
     @FXML
-    private JFXButton mainCompanies;
+    private Button mainCompanies;
 
     private SceneController sceneController;
     @FXML

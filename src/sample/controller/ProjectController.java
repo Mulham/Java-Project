@@ -3,15 +3,11 @@
 
 package sample.controller;
 
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXTextField;
 import javafx.animation.FadeTransition;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -35,10 +31,10 @@ public class ProjectController {
     private URL location;
 
     @FXML
-    private JFXButton mainLogout;
+    private Button mainLogout;
 
     @FXML
-    private JFXButton table_back;
+    private Button table_back;
 
     @FXML
     private ImageView surface_add;
@@ -53,16 +49,16 @@ public class ProjectController {
     private TableColumn<Project, String> project_table;
 
     @FXML
-    private JFXButton project_delete;
+    private Button project_delete;
 
     @FXML
-    private JFXTextField project_field;
+    private TextField project_field;
 
     @FXML
-    private JFXTextField surface_field;
+    private TextField surface_field;
 
     @FXML
-    private JFXButton project_update;
+    private Button project_update;
 
     @FXML
     private TableView<Surface> table1;
@@ -74,10 +70,10 @@ public class ProjectController {
     private TableColumn<Surface, String> surface_table;
 
     @FXML
-    private JFXButton surface_delete;
+    private Button surface_delete;
 
     @FXML
-    private JFXButton surface_update;
+    private Button surface_update;
     @FXML
     private TableView<Stage> table11;
 
@@ -91,13 +87,13 @@ public class ProjectController {
     private ImageView stage_add;
 
     @FXML
-    private JFXTextField stage_field;
+    private TextField stage_field;
 
     @FXML
-    private JFXButton stage_delete;
+    private Button stage_delete;
 
     @FXML
-    private JFXButton stage_update;
+    private Button stage_update;
     @FXML
     private Label label;
 

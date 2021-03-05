@@ -3,16 +3,12 @@
 
 package sample.controller;
 
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXDatePicker;
-import com.jfoenix.controls.JFXTextField;
+
 import javafx.animation.FadeTransition;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.util.Duration;
@@ -34,10 +30,10 @@ public class EquipmentController {
     private URL location;
 
     @FXML
-    private JFXButton mainLogout;
+    private Button mainLogout;
 
     @FXML
-    private JFXButton table_back;
+    private Button table_back;
     @FXML
     private TableView<Equipment> table;
     @FXML
@@ -65,39 +61,39 @@ public class EquipmentController {
     private TableColumn<Equipment, LocalDate> k_date;
 
     @FXML
-    private JFXTextField name_field;
+    private TextField name_field;
 
     @FXML
-    private JFXTextField pole_field;
+    private TextField pole_field;
 
     @FXML
-    private JFXTextField mp_field;
+    private TextField mp_field;
 
     @FXML
-    private JFXTextField mag_field;
+    private TextField mag_field;
 
     @FXML
-    private JFXTextField uv_field;
+    private TextField uv_field;
 
     @FXML
-    private JFXTextField light_field;
+    private TextField light_field;
 
     @FXML
-    private JFXTextField performance_field;
+    private TextField performance_field;
 
     @FXML
-    private JFXButton addButton;
+    private Button addButton;
 
     @FXML
-    private JFXButton updateButton;
+    private Button updateButton;
 
     @FXML
-    private JFXButton deleteButton;
+    private Button deleteButton;
     @FXML
     private Label label;
 
     @FXML
-    private JFXDatePicker date_field;
+    private DatePicker date_field;
     private SceneController sceneController;
     ObservableList<Equipment> oblist = FXCollections.observableArrayList();
     DatabaseHandler databaseHandler;

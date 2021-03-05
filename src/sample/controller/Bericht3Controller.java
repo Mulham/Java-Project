@@ -2,16 +2,11 @@
 
 package sample.controller;
 
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXCheckBox;
-import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 import sample.model.Bericht;
 
@@ -28,32 +23,32 @@ public class Bericht3Controller {
     private URL location;
 
     @FXML
-    private JFXButton mainLogout;
+    private Button mainLogout;
 
     @FXML
-    private JFXButton table_back;
+    private Button table_back;
 
     @FXML
-    private JFXTextField deviations;
+    private TextField deviations;
 
     @FXML
-    private JFXButton nextButton;
+    private Button nextButton;
 
     @FXML
     private Label idLabel;
 
     @FXML
-    private JFXTextField desc;
+    private TextField desc;
 
     @FXML
-    private JFXTextField dates;
+    private TextField dates;
 
     @FXML
-    private JFXCheckBox grafik1;
+    private CheckBox grafik1;
     @FXML
     private Label label;
     @FXML
-    private JFXCheckBox grafik2;
+    private CheckBox grafik2;
     private SceneController sceneController;
     @FXML
     void initialize() {

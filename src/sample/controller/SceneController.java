@@ -3,10 +3,10 @@
 
 package sample.controller;
 
-import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
@@ -14,7 +14,7 @@ import java.io.IOException;
 
 public class SceneController {
 
-    public void changeScene(JFXButton button, String scene ){
+    public void changeScene(Button button, String scene ){
         button.getScene().getWindow().hide();
         FXMLLoader loader   = new FXMLLoader();
         loader.setLocation(getClass().getResource("/sample/view/" + scene));

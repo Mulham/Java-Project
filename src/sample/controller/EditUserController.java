@@ -3,16 +3,13 @@
 
 package sample.controller;
 
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXDatePicker;
-import com.jfoenix.controls.JFXPasswordField;
-import com.jfoenix.controls.JFXTextField;
+
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import sample.Database.DatabaseHandler;
@@ -31,28 +28,28 @@ public class EditUserController {
     private URL location;
 
     @FXML
-    private JFXButton mainLogout;
+    private Button mainLogout;
 
     @FXML
-    private JFXButton table_back;
+    private Button table_back;
 
     @FXML
-    private JFXTextField addName;
+    private TextField addName;
 
     @FXML
-    private JFXTextField addSurname;
+    private TextField addSurname;
 
     @FXML
-    private JFXTextField addLevel;
+    private TextField addLevel;
 
     @FXML
-    private JFXDatePicker addDate;
+    private DatePicker addDate;
 
     @FXML
-    private JFXPasswordField addPassword;
+    private PasswordField addPassword;
 
     @FXML
-    private JFXButton updateButton;
+    private Button updateButton;
     @FXML
     private Label idLabel;
     @FXML

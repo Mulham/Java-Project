@@ -1,9 +1,7 @@
 //Autohr: Mulham Alibrahim 170503111
 package sample.controller;
 
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXPasswordField;
-import com.jfoenix.controls.JFXTextField;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import sample.Database.DatabaseHandler;
@@ -15,6 +13,9 @@ import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import java.util.ResourceBundle;
 public class LoginController {
     @FXML
@@ -23,15 +24,15 @@ public class LoginController {
     private URL location;
 
     @FXML
-    private JFXTextField loginUsername;
+    private TextField loginUsername;
 
     @FXML
-    private JFXPasswordField loginPassword;
+    private PasswordField loginPassword;
 
     @FXML
     private Label label;
     @FXML
-    private JFXButton loginButton;
+    private Button loginButton;
     private DatabaseHandler databaseHandler;
     private SceneController sceneController;
 

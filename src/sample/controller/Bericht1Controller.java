@@ -2,12 +2,12 @@
 
 package sample.controller;
 
-import com.jfoenix.controls.*;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import sample.Database.DatabaseHandler;
@@ -32,64 +32,64 @@ public class Bericht1Controller {
     private URL location;
 
     @FXML
-    private JFXButton mainLogout;
+    private Button mainLogout;
 
     @FXML
-    private JFXButton backButton;
+    private Button backButton;
 
     @FXML
-    private JFXTextField inspectionPlace;
+    private TextField inspectionPlace;
 
     @FXML
-    private JFXButton nextButton;
+    private Button nextButton;
 
     @FXML
     private Label idLabel;
 
     @FXML
-    private JFXComboBox<String> Customer;
+    private ComboBox<String> Customer;
 
     @FXML
-    private JFXComboBox<String> Project;
+    private ComboBox<String> Project;
 
     @FXML
-    private JFXTextField inspectionStandart;
+    private TextField inspectionStandart;
 
     @FXML
-    private JFXTextField evaluationStandart;
+    private TextField evaluationStandart;
 
     @FXML
-    private JFXTextField inspectionProcedure;
+    private TextField inspectionProcedure;
 
     @FXML
-    private JFXSlider inspectionScpoe;
+    private Slider inspectionScpoe;
 
     @FXML
-    private JFXTextField drawingNo;
+    private TextField drawingNo;
 
     @FXML
-    private JFXComboBox<String> surfaceCondition;
+    private ComboBox<String> surfaceCondition;
 
     @FXML
-    private JFXComboBox<String> stageOfExamination;
+    private ComboBox<String> stageOfExamination;
 
     @FXML
-    private JFXTextField page;
+    private TextField page;
 
     @FXML
     private Label reportNo;
 
     @FXML
-    private JFXDatePicker reportDate;
+    private DatePicker reportDate;
 
     @FXML
-    private JFXComboBox<String> jobOrderNo;
+    private ComboBox<String> jobOrderNo;
     @FXML
-    private JFXComboBox<String> equipment;
+    private ComboBox<String> equipment;
     @FXML
     private Label label;
     @FXML
-    private JFXComboBox<String> offerNo;
+    private ComboBox<String> offerNo;
     private SceneController sceneController;
     DatabaseHandler databaseHandler;
 
