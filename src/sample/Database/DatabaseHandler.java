@@ -14,7 +14,7 @@ public class DatabaseHandler extends Configs {
         String connectionString = "jdbc:mysql://" + dbHost + ":"
                 + dbPort + "/"
                 + dbName + "?autoReconnect=true&useSSL=false";
-        Class.forName("com.mysql.jdbc.Driver");
+        Class.forName("com.mysql.cj.jdbc.Driver");
 
         dbConnection = DriverManager.getConnection(connectionString, dbUser, dbPass);
         System.out.println(dbConnection);
@@ -492,7 +492,7 @@ public class DatabaseHandler extends Configs {
     }
         public ResultSet getUser(String username, String password){
                 ResultSet resultset = null;
-                String query = "SELECT * FROM mydb.Users where Name=? and password=?";
+                String query = "SELECT * FROM " + dbName + ".Users where Name=? and password=?";
                 try {
                     PreparedStatement preparedStatement = getDbConnection().prepareStatement(query);
                     preparedStatement.setString(1, username);
