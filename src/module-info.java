@@ -1,4 +1,4 @@
-module INF202 {
+module java.project {
     requires javafx.fxml;
     requires javafx.controls;
     requires javafx.graphics;
@@ -9,3 +9,4 @@ module INF202 {
     requires java.desktop;
     opens sample.controller;
 }
+

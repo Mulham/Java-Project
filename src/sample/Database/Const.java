@@ -1,5 +1,3 @@
-//Autohr: Mulham Alibrahim 170503111
-
 
 package sample.Database;
 
@@ -8,6 +6,7 @@ public class Const {
     public static final String RADIOGRAPHER_TABLE = "Betreiber";
     public static final String EVALUATOR_TABLE = "Bewerter";
     public static final String CONFIRMATOR_TABLE = "Genehmiger";
+    public static final String USERS_TABLE = "Users";
 
     //VARIABLES FOR ALL USERS TABLE
 

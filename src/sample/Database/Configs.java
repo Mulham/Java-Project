@@ -1,6 +1,3 @@
-//Autohr: Mulham Alibrahim
-
-
 package sample.Database;
 
 public class Configs {
