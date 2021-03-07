@@ -8,5 +8,6 @@ module java.project {
     requires java.sql;
     requires java.desktop;
     opens sample.controller;
+    opens sample.model;
 }
 

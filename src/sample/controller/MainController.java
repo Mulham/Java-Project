@@ -47,6 +47,19 @@ public class MainController {
         mainLogout.setOnAction(event -> {
             sceneController.changeScene(mainLogout, "login.fxml");
         });
+        mainUsers.setOnAction(event -> {
+            mainUsers.getScene().getWindow().hide();
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/sample/view/users.fxml"));
+                Parent root = (Parent) loader.load();
+                UserController userController = loader.getController();
+                userController.tableView();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.show();
+            }catch  (IOException e){
+                e.printStackTrace();
+            }       });
 
     }
 
