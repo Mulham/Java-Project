@@ -113,6 +113,28 @@ public class UserController {
                 }
 
         );
+        user_edit.setOnAction(event -> {
+            User user = table.getSelectionModel().getSelectedItem();
+            if (!table.getSelectionModel().isEmpty()){
+                user_edit.getScene().getWindow().hide();
+                try {
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/sample/view/editUser.fxml"));
+                    Parent root = (Parent) loader.load();
+                    EditUserController editUserController = loader.getController();
+                    editUserController.getInfo(user);
+                    Stage stage = new Stage();
+                    stage.setScene(new Scene(root));
+                    stage.show();
+                }catch  (IOException e){
+                    e.printStackTrace();
+                }
+            }
+            else{
+                radiographer_label.setText("You should select an Item");
+            }
+
+
+        });
 
     }
 

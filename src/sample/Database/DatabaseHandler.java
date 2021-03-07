@@ -40,6 +40,24 @@ public class DatabaseHandler extends Configs {
             return false;
         }
     }
+    public boolean editUser(User user) {
+        String edit = "update Users " + " set Name = ?, Nachname = ?, Level = ?, Zertifikat_datum = ?, password = ?"
+                +" Where idUser" + " = ?";
+        try {
+            PreparedStatement preparedStatement = getDbConnection().prepareStatement(edit);
+            preparedStatement.setString(1, user.getName());
+            preparedStatement.setString(2, user.getNachname());
+            preparedStatement.setString(3, user.getLevel());
+            preparedStatement.setString(4, String.valueOf(user.getZertifikat_datum()));
+            preparedStatement.setString(5, user.getPassword());
+            preparedStatement.setInt(6, user.getId());
+            preparedStatement.executeUpdate();
+            return true;
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
     public boolean addUser(User user) {
         String insert = "INSERT INTO Users " + " (Name, Nachname, Level, Zertifikat_datum, password) VALUES (?,?,?,?,?);";
         try {
