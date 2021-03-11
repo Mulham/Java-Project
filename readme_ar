@@ -7,12 +7,18 @@
 
 # كيفية التنصيب
 
-1. قم بتغيير مسار اعتماديات التطبيق من ملف "INF202.iml" أو يمكن فعل ذلك ضمن برنامج IntelliJ IDE من File > Project Structure
+1. إذا قمت بتحميل الحزمة هذه كملف مضغوط فيجب بعد فك الضغط عنها تغيير اسم المجلد الناتج من Java-Project-main إلى INF202
+
+2. قم بتغيير مسار اعتماديات التطبيق من ملف "INF202.iml" أو يمكن فعل ذلك ضمن برنامج IntelliJ IDE من File > Project Structure (يجب تحميل JavaFX SDK و MySQL Connector.jar وإضافتها للمكتبات من النافذة المذكورة)
+
+3. قم بتهيئة قاعدة البيانات التي سيتم ربطها مع التطبيق من خلال تطبيق MySQL Workbench. حيث قم عبره بفتح ملف "database_schema.mwb" ومن هناك يمكنك تحويل المخطط ل sql من خلال الخيار "Database" في الأعلى ثم "Forward Engineering"
+
+4. غير معلومات قاعدة البيانات الموجودة في مجلد Database ملف Configs إلى معلومات الاتصال الخاصة بك.
+
+5. في إعدادات التشغيل في محرر IntelliJ يجب أن يكون لديم نفس الإعدادات التي في الصورة الموجودة على الرابط:
 
 
-2. قم بتهيئة قاعدة البيانات التي سيتم ربطها مع التطبيق من خلال تطبيق MySQL Workbench. حيث قم عبره بفتح ملف "database_schema.mwb" ومن هناك يمكنك تحويل المخطط ل sql من خلال الخيار "Database" في الأعلى ثم "Forward Engineering"
-
-3. غير معلومات قاعدة البيانات الموجودة في مجلد Database ملف Configs إلى معلومات الاتصال الخاصة بك.
+https://raw.githubusercontent.com/Mulham/Java-Project/images/images/IntelliJ-project-libraries.png
 
 # الترخيص
 
